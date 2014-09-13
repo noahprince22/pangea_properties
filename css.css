@@ -1,3 +1,13 @@
+.btn{
+  color: #FFF;
+  background: #99cc33;
+  font-weight: bold;
+  padding: 10px 20px 9px;
+  display: inline;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
 .sectionTitle.con-none, .sectionTitle.con-none h3 {
   border-width: 3px;
 }
@@ -7,8 +17,7 @@
 }
 
 .padless{
-  padding-bottom: 0;
-  
+  padding-bottom: 0;  
 }
 
 body{
@@ -41,7 +50,12 @@ body{
   margin: 0 auto;
   float: left;
 }
-
+.title{
+  font-size: 2em;
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 35px;
+}
 .transbox
 {
   width: 200px;
@@ -243,9 +257,10 @@ margin-bottom: -45px !important;
 
 .icon-holder {
   padding-left:12%;
+  height: 228px;
 }
 .icon {
-  padding-left:10%;
+  padding-left:8.5%;
   float:left;
   text-align:center;
   color:#bdbdbd;
@@ -322,16 +337,41 @@ margin-bottom: -45px !important;
 }
 
 .award-holder .award{
+  /* background-repeat: no-repeat; */
+  /* display: inline-block; */
+  /* height: 130px; */
+  /* width: 170px; */
+  /* background-size: contain; */
+  /* margin-right:12px; */
   background-repeat: no-repeat;
   display: inline-block;
-  height: 130px;
-  width: 170px;
+  height: 200px;
+  width: 250px;
   background-size: contain;
-  margin-right:12px;
+  margin-right: 12px;
 }
 
 .award-holder img{
   padding-left:1%;  
+}
+
+#see-more{
+  height: 184px;
+  margin-left: 2px;
+  margin-right: 12px;
+  margin-bottom: 15px;
+  width: 250px;
+  border: 5px solid #b5d5e6;
+  display: inline-block;
+  position: relative;
+}
+
+#see-more span{
+  position: absolute;
+  top: 75px;
+  left: 70px;
+  color: #99cc33;
+  font-size: 24px;
 }
 
 #inc {
@@ -375,14 +415,960 @@ margin-bottom: -45px !important;
 }
 
 /* CAREERS */
-#culture{
+.teams-nav{
+  height: 600px;
+}
+.teams-nav.clicked{
+  height: 330px;
+}
+.teams-nav [name="back_to_menu"]{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
+}
+.teams-nav.clicked .click-info{
+  display:none;
+}
+.teams-nav .click-info{
+  position:absolute;
+  display: inline-block;
+  left: 40px;
+  top: 90px;
+}
+.teams-nav.clicked [name="back_to_menu"]{
+  display: inline;
+}
+.hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 55px solid #6C6;
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+    position: absolute;
+    top: -54px;
+}
+.hex.clicked:before{
+  content: " ";
+  width: 0;
+  height: 0;
+  border-bottom: 27px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  position: absolute;
+  top: -26px;
+}                   
+.hex {
+  position: absolute;
+  margin-top: 60px;
+  width: 208px;
+  height: 120px;
+  background-color: #6C6;
+  position: absolute;
+}
+.hex.clicked{
+  margin-top: 60px;
+  width: 104px;
+  height: 60px;
+  background-color: #6C6;
+}
+.hex strong {
+  font-size: 20px;
+  margin: 0 auto;
+  display: table;
+  text-align: center;
+}
+.hex.clicked strong{
+  display: none;
+}
+.hex img {
+  display: table;
+  margin: 20px auto;
+}
+.hex.clicked img{
+  margin: 0 auto;
+}
+.hex:hover img.second{
+  display: table !important;
+}
+.hex:hover img{
+  display: none !important;
+}
+.hex img.second{
+  display: none !important;
+}
+.hex a:hover {
+  color: white;
+}
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    border-top: 55px solid #6C6;
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+}
+.hex.clicked:after{
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  border-top: 27px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hex.construction:before {
+  border-bottom-color: #44adee;
+}
+.hex.construction:after {
+  border-top-color: #44adee;  
+}                        
+.hex.construction {
+  background-color: #44adee;
+  left: 271px;
+}
+.hex.construction.clicked {
+  left: 107px;
+}
+
+.hex.financing:before{
+  border-bottom-color: #61cb9d;
+}
+.hex.financing:after{
+  border-top-color: #61cb9d;  
+}                        
+.hex.financing{
+  background-color: #61cb9d;
+  left: 485px;
+}
+.hex.financing.clicked{
+  left: 214px;
+}
+
+.hex.marketing:before{
+  border-bottom-color: #73cdff;
+}
+.hex.marketing:after{
+  border-top-color: #73cdff;  
+}                        
+.hex.marketing{
+  background-color: #73cdff;
+  left: 698px;
+}
+.hex.marketing.clicked{
+  left: 320.5px;  
+}
+
+.hex.strategy:before{
+  border-bottom-color: #f4684d;
+}
+.hex.strategy:after{
+  border-top-color: #f4684d;  
+}                        
+.hex.strategy{
+  background-color: #f4684d;
+  left: 165px;
+  top: 179px;
+}
+.hex.strategy.clicked{
+  left: 54px;
+  top: 89.5px;
+}
+
+.hex.contact:before{
+  border-bottom-color: #9acd34;
+}
+.hex.contact:after{
+  border-top-color: #9acd34;  
+}                        
+.hex.contact{
+  background-color: #9acd34;
+  left: 378px;
+  top: 179px;
+}
+.hex.contact.clicked{
+  left: 160.5px;
+  top: 89.5px;
+}
+
+.hex.property:before{
+  border-bottom-color: #2be5e4;
+}
+.hex.property:after{
+  border-top-color: #2be5e4;  
+}                        
+.hex.property{
+  background-color: #2be5e4;
+  left: 591px;
+  top: 179px;
+}
+.hex.property.clicked{
+  left: 267.5px;
+  top: 89.5px;
+}
+
+
+.hex.legal:before{
+  border-bottom-color: #ffd800;
+}
+.hex.legal:after{
+  border-top-color: #ffd800;  
+}                        
+.hex.legal{
+  background-color: #ffd800;
+  left: 57px;
+  top: 357px;
+}
+.hex.legal.clicked{
+  left: 0px;
+  top: 178.5px;
+}
+
+.hex.accounting:before{
+  border-bottom-color: #ff8a02;
+}
+.hex.accounting:after{
+  border-top-color: #ff8a02;  
+}                        
+.hex.accounting{
+  background-color: #ff8a02;
+  left: 271px;
+  top: 357px;
+}
+.hex.accounting.clicked{
+  left: 107px;
+  top: 178.5px;
+}
+
+.hex.technology:before{
+  border-bottom-color: #ffbc00;
+}
+.hex.technology:after{
+  border-top-color: #ffbc00;  
+}                        
+.hex.technology{
+  background-color: #ffbc00;
+  left: 485px;
+  top: 357px;
+}
+.hex.technology.clicked{
+  left: 214px;
+  top: 178.5px;
+}
+
+.teams-nav .description {
+  position: relative;
+  width: 50%;
+  left: 50%;
+  display: none;
+  padding-top: 55px;
+  font-size: 1.5em;
+  padding-left: 20px;
+}
+
+.opportunity div, .opportunity img{
+  display: table;
+  margin: 0 auto;
+}
+.btn{
+  color: #FFF;
+  background: #99cc33;
+  font-weight: bold;
+  padding: 10px 20px 9px;
+  display: inline;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.sectionTitle.con-none, .sectionTitle.con-none h3 {
+  border-width: 3px;
+}
+
+.desktop-only{
+  display: block;
+}
+
+.padless{
+  padding-bottom: 0;  
+}
+
+body{
+  font-family:"Arial"
+  overflow:hidden;
+}
+
+.row-fluid{
+  margin-bottom: 12px !important;
+}
+
+#footer1{
+  margin-top:-100px;
+}
+
+.article-bottom{
+  overflow:hidden;
+}
+
+.building {
+  display: inline;
+}
+
+.building p {
+  padding-left: 85px;
+}
+
+.building img {
+  width: 70px;
+  margin: 0 auto;
+  float: left;
+}
+.title{
+  font-size: 2em;
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 35px;
+}
+.transbox
+{
+  width: 200px;
+  height: 100px;
+  background: white;
+  opacity=.6;
+}
+
+
+/*Brys stuff*/
+.hide {
+  visibility: hidden;
+}
+li:hover > .holder {
+  visibility: visible;
+}
+/* end of brys stuff*/
+
+ol.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type none;
+
+}
+
+ol.timeline:before {
+  width: 100%;
+  margin-top: -2px; /*same as border-bottom*/
+  top: 50%;
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #d1d2d4;
+}
+
+ol.timeline li{
+  position: relative;
+  z-index: 5; /*greater than z-index for line*/
+  display:inline-block;
+  text-align:center;
+  line-height: 2em;
+  height: 35px;
+  width: 35px;
+  color: #d1d2d4;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d1d2d4;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: white;
+
+}
+
+ol.timeline li:hover
+{
+  background-color:#99cc33;
+  color: white;
+  box-shadow: 0px 0px 0px 5px #e9e9e9;
+}
+
+
+ol.timeline li.rmarg
+{
+  margin-right: 12.1%;
+}
+
+.timeline_element {
+  width: 94% !important;
+}
+
+.timeline {
+  width: 100% !important;
+}
+
+.holder
+{
+  margin-top: 40px; /* space between circle and box triangle*/
+  margin-left: -82px; /* is dependent on layout so may need tweaking*/
+  position: relative;
+  padding-top: 30px; /* same as border-bottom on triangle*/
+  width: 200px;
+
+}
+
+.inner
+{
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 200px;
+  padding: 0px;
+  background: #99cc33;
+  line-height: 135%;
+}
+
+.inner-small
+{
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  background: #99cc33;
+  line-height: 135%;
+}
+
+.inner-big
+{
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 220px;
+  padding: 0px;
+  background: #99cc33;
+  line-height: 135%;
+}
+
+.triangle
+{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -15px; /*half of border-bottom */
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #99cc33;
+  display: block;
+  width: 0;
+  z-index: 0;
+}
+
+.news /* For outreach in the news and press header */
+{
+  font-size:2em !important;
+  /* color:#bdbdbd; */
+  /* position:absolute; */
+}
+
+.stretchwidth
+{
+  background-color:#dbeff8;
+  border-style:solid;
+  border-color:#cee9f4;
+}
+
+.advisory
+{
+  height:40px;
+  width:160px;
+  background-color:white;
+  text-align:center;
+  border-style:solid;
+  border-color:#cee9f4;
+  border-width:4px;
+  margin: 0 auto -40px;
+  z-index: 100;
+  position: relative;
+}
+
+.advisorytext
+{
+  font-size:1.5em;
+  color:black;
+  padding-top:7px;
+}
+
+.bluebox
+{
+  padding-left:3%;
+  background-color:#dbeff8;
+  /* height:25em; */
+  overflow:auto;
+  border-style:solid;
+  border-color:#cee9f4;
+  border-width:4px;
+}
+
+.accordion
+{
+  background-color:#f0f7e1;
+  padding-top:75px;
+}
+
+.blackribbon
+{
+  position:absolute;
+  top:-10px;
+  left:36%;
+  text-align:center;
+}
+
+
+
+/* HOME PAGE */
+.title-body .row-fluid {
+margin-bottom: -45px !important;
+}
+
+.icon-holder {
+  padding-left:12%;
+  height: 228px;
+}
+.icon {
+  padding-left:8.5%;
+  float:left;
+  text-align:center;
+  color:#bdbdbd;
+  font-size:125%;
+  font-weight:bold;
+
+}
+
+.icon span {
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.tophover:hover
+{
+  color:#99cc33;
+}
+
+.tophover:hover span
+{
+  color:#99cc33;
+}
+
+#awards_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icon-awards.png");
+}
+
+#inthenews_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icon-news.png");
+}
+
+#history_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icon-history.png");
+}
+
+
+#awards_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icon-awards-hover.png");
+}
+
+#inthenews_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icon-news-hover.png");
+}
+
+#history_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icon-history-hover.png");
+}
+
+.award-holder{
+  text-align:center;
+  margin-left: -2%;
+}
+
+#award-label{
+  margin-left: -4%;
+  font-size:2em;
+  color:#a0c6d9;
+  padding-left:1%;
+}
+
+#awards{
+  padding-left: 3%;
+  background-color: #dbeff8;
+  overflow: auto;
+  padding-bottom: 40px;
+  margin-top:-100px;
+  margin-bottom:30px;
+}
+
+#awards .wrapper{
+  padding-bottom: 10px;  
+}
+
+.award-holder .award{
+  /* background-repeat: no-repeat; */
+  /* display: inline-block; */
+  /* height: 130px; */
+  /* width: 170px; */
+  /* background-size: contain; */
+  /* margin-right:12px; */
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 200px;
+  width: 250px;
+  background-size: contain;
+  margin-right: 12px;
+}
+
+.award-holder img{
+  padding-left:1%;  
+}
+
+#see-more{
+  height: 184px;
+  margin-left: 2px;
+  margin-right: 12px;
+  margin-bottom: 15px;
+  width: 250px;
+  border: 5px solid #b5d5e6;
+  display: inline-block;
+  position: relative;
+}
+
+#see-more span{
+  position: absolute;
+  top: 75px;
+  left: 70px;
+  color: #99cc33;
+  font-size: 24px;
+}
+
+#inc {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-inc.jpg");
+}
+
+#brill {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-brill.jpg");
+}
+
+#gna{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-gna.jpg");
+}
+
+#hire{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-hire.jpg");
+}
+
+#TWP{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-TWP.jpg");
+}
+
+#inc:hover{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-inc-hover.jpg");
+}
+
+#brill:hover{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-brill-hover.jpg");
+}
+
+#gna:hover{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-gna-hover.jpg");
+}
+
+#hire:hover{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-hire-hover.jpg");
+}
+
+#TWP:hover{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/Awards-TWP-hover.jpg");
+}
+
+/* CAREERS */
+.teams-nav{
+  height: 600px;
+}
+.teams-nav.clicked{
+  height: 330px;
+}
+.teams-nav [name="back_to_menu"]{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
+}
+.teams-nav.clicked .click-info{
+  display:none;
+}
+.teams-nav .click-info{
+  position:absolute;
+  display: inline-block;
+  left: 40px;
+  top: 90px;
+}
+.teams-nav.clicked [name="back_to_menu"]{
+  display: inline;
+}
+.hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 55px solid #6C6;
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+    position: absolute;
+    top: -54px;
+}
+.hex.clicked:before{
+  content: " ";
+  width: 0;
+  height: 0;
+  border-bottom: 27px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  position: absolute;
+  top: -26px;
+}                   
+.hex {
+  position: absolute;
+  margin-top: 60px;
+  width: 208px;
+  height: 120px;
+  background-color: #6C6;
+  position: absolute;
+}
+.hex.clicked{
+  margin-top: 60px;
+  width: 104px;
+  height: 60px;
+  background-color: #6C6;
+}
+.hex strong {
+  font-size: 20px;
+  margin: 0 auto;
+  display: table;
+  text-align: center;
+}
+.hex.clicked strong{
+  display: none;
+}
+.hex img {
+  display: table;
+  margin: 20px auto;
+}
+.hex.clicked img{
+  margin: 0 auto;
+}
+.hex:hover img.second{
+  display: table !important;
+}
+.hex:hover img{
+  display: none !important;
+}
+.hex img.second{
+  display: none !important;
+}
+.hex a:hover {
+  color: white;
+}
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    border-top: 55px solid #6C6;
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+}
+.hex.clicked:after{
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  border-top: 27px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hex.construction:before {
+  border-bottom-color: #44adee;
+}
+.hex.construction:after {
+  border-top-color: #44adee;  
+}                        
+.hex.construction {
+  background-color: #44adee;
+  left: 271px;
+}
+.hex.construction.clicked {
+  left: 107px;
+}
+
+.hex.financing:before{
+  border-bottom-color: #61cb9d;
+}
+.hex.financing:after{
+  border-top-color: #61cb9d;  
+}                        
+.hex.financing{
+  background-color: #61cb9d;
+  left: 485px;
+}
+.hex.financing.clicked{
+  left: 214px;
+}
+
+.hex.marketing:before{
+  border-bottom-color: #73cdff;
+}
+.hex.marketing:after{
+  border-top-color: #73cdff;  
+}                        
+.hex.marketing{
+  background-color: #73cdff;
+  left: 698px;
+}
+.hex.marketing.clicked{
+  left: 320.5px;  
+}
+
+.hex.strategy:before{
+  border-bottom-color: #f4684d;
+}
+.hex.strategy:after{
+  border-top-color: #f4684d;  
+}                        
+.hex.strategy{
+  background-color: #f4684d;
+  left: 165px;
+  top: 179px;
+}
+.hex.strategy.clicked{
+  left: 54px;
+  top: 89.5px;
+}
+
+.hex.contact:before{
+  border-bottom-color: #9acd34;
+}
+.hex.contact:after{
+  border-top-color: #9acd34;  
+}                        
+.hex.contact{
+  background-color: #9acd34;
+  left: 378px;
+  top: 179px;
+}
+.hex.contact.clicked{
+  left: 160.5px;
+  top: 89.5px;
+}
+
+.hex.property:before{
+  border-bottom-color: #2be5e4;
+}
+.hex.property:after{
+  border-top-color: #2be5e4;  
+}                        
+.hex.property{
+  background-color: #2be5e4;
+  left: 591px;
+  top: 179px;
+}
+.hex.property.clicked{
+  left: 267.5px;
+  top: 89.5px;
+}
+
+
+.hex.legal:before{
+  border-bottom-color: #ffd800;
+}
+.hex.legal:after{
+  border-top-color: #ffd800;  
+}                        
+.hex.legal{
+  background-color: #ffd800;
+  left: 57px;
+  top: 357px;
+}
+.hex.legal.clicked{
+  left: 0px;
+  top: 178.5px;
+}
+
+.hex.accounting:before{
+  border-bottom-color: #ff8a02;
+}
+.hex.accounting:after{
+  border-top-color: #ff8a02;  
+}                        
+.hex.accounting{
+  background-color: #ff8a02;
+  left: 271px;
+  top: 357px;
+}
+.hex.accounting.clicked{
+  left: 107px;
+  top: 178.5px;
+}
+
+.hex.technology:before{
+  border-bottom-color: #ffbc00;
+}
+.hex.technology:after{
+  border-top-color: #ffbc00;  
+}                        
+.hex.technology{
+  background-color: #ffbc00;
+  left: 485px;
+  top: 357px;
+}
+.hex.technology.clicked{
+  left: 214px;
+  top: 178.5px;
+}
+
+.teams-nav .description {
+  position: relative;
+  width: 50%;
+  left: 50%;
+  display: none;
+  padding-top: 55px;
+  font-size: 1.5em;
+  padding-left: 20px;
+}
+
+.opportunity div, .opportunity img{
+  display: table;
+  margin: 0 auto;
+}
+.opportunity img{
+  margin-bottom: 10px;
+}
+.opportunity div{
+  font-weight:bold;
+  font-size:large;
+}
+
+.blue-back{
+  padding-top: 20px;
   background-color:#daeff8;
   width:100%;
   margin-bottom: 40px;
   margin-top: -100px;
 }
 
-#culture .wrapper{
+.blue-back .wrapper{
   padding-bottom: 0;
 }
 
@@ -418,8 +1404,264 @@ margin-bottom: -45px !important;
 }
 
 /* ABOUT */
+.people-content li{
+  display: inline-block;
+  margin-right: -5px;
+}
+
+#numbers {
+  background-color: #ccc;
+  margin-left: 3.7%;
+  padding-top: 7px;
+  height: 35px;
+  width: 93.2%;
+  font-size: 38px;
+  color: white;
+}
+#numbers-content{
+  margin-top: 0px;
+  position: relative;
+  height: 200px;
+}
+#numbers-content li{
+  cursor: pointer;
+  position: absolute;
+  margin-bottom: 0;
+  width: 219.333px;
+  height: 205px;
+  margin-right: -4.5px;
+  border: 1px solid #ccc;
+}
+#numbers-content li:hover{
+  padding: 12px 50px 36px 61px;
+  border: 7px solid #99cc33;
+}
+
+#numbers-content li img{
+  margin-bottom:20px;
+  display: block;
+}
+#numbers-content li strong{
+  font-size: 54px;
+  color: #ccc;
+}
+#numbers-content li span{
+  color:  #ccc;
+  font-size: 32px;
+  line-height: 1;
+}
+#number-46{
+  left: 35px;
+  padding: 36px 34px 36px 38px;
+}
+#numbers-content li:hover span{
+  display: block !important;
+}
+#numbers-content li:hover img{
+  display: none;
+}
+#number-55{
+  left: 253px;
+  padding: 27px 54px 36px 56px;
+}
+#number-35{
+  padding: 12px 50px 36px 61px;
+  left: 471px;
+}
+#number-59{
+  padding: 44px 55px 36px 56px;
+  left: 690px;
+}
+
+a.tooltip {outline:none; cursor: pointer;}
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+  z-index: 10;
+  display: none;
+  padding: 14px 20px;
+  margin-top: 30px;
+  margin-left: -55px;
+  width: 190px;
+  line-height: 16px;
+}
+a.tooltip:hover span{
+  display: inline;
+  position: absolute;
+  color: #111;
+  border: 1px solid #DCA;
+  background: #fffAF0;
+}
+.callout {z-index:20;position:absolute;border:0;top:-12px;left:85px;}
+    
+a.tooltip span
+{
+    border-radius:2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+        
+    -moz-box-shadow: 0px 0px 8px 4px #666;
+    -webkit-box-shadow: 0px 0px 8px 4px #666;
+    box-shadow: 0px 0px 8px 4px #666;
+}
+
+.people-content{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.people-caption, .leader-desc.mobile{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc; 
+}
+
+.leader-desc.desktop{
+  text-align: center;
+}
+.leader-desc.desktop h3{
+  opacity: 0.8;
+}
+i{
+  font-style: italic;
+}
+
+.people-caption{
+  height: 80px;
+  magin-top: -10px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.people-caption h4{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.people-caption h5{
+  margin-bottom: 0;
+}
+
+.people-caption a {
+  color: #99cc33;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.leader-desc.mobile{
+  height: 180px;
+  background: #eee;
+  display:none;
+}
+
 .people-top{
   margin-bottom: 0 !important;
+}
+ /* OUR TEAMS STUFF */
+#ourteams-content li, #ourteams-content img{
+  width: 227px;
+  height: 175px;
+  float: left;
+}
+
+#ourteams-content li{
+  color: white;
+  padding: 110px 100px 0 5px;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.speech {
+  position: relative;
+  display:inline-block;
+  width: 160px;
+  height: 170px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #eee;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  top: 25px;
+  left: -20px;
+  cursor: pointer;
+}
+.speech.hover{
+  background-color: #fff;
+  border: 5px solid #99cc33;
+  -moz-box-shadow: 2px 2px 4px #888;
+}
+.speech.speech-left:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 76px;
+  top: 161px;
+  border: 21px solid;
+  border-color: #eee #eee transparent transparent;
+}
+.speech.speech-left.hover:before {
+  border-color: #99cc33 #99cc33 transparent transparent;
+}
+.speech.speech-left.hover:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 82px;
+  top: 160px;
+  border: 16px solid;
+  border-color: #fff #fff transparent transparent;
+}
+
+.speech.speech-right:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 40px;
+  top: 161px;
+  border: 21px solid;
+  border-color: #eee transparent transparent #eee;
+}
+.speech.speech-right.hover:before {
+  border-color: #99cc33 transparent transparent #99cc33;
+}
+.speech.speech-right.hover:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 45px;
+  top: 160px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+.speech p{
+  padding-bottom: 20px;
+  line-height: 2;
+  position: relative;
+  font-size: 19px;
+}
+.speech p span{
+  color: #99cc33;
+  position: relative;
+  top: 0;
+  font-size: 14px;
+}
+
+#shadow{
+  border: 0;
+  height: 2px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  margin-top: -2px;
+  margin-right: 101px;
+  /* padding-right: 5px; */
+  width: 92%;
 }
 
 .hr-thick {
@@ -641,6 +1883,10 @@ margin-bottom: -45px !important;
   display: none;
 }
 
+.mobile {
+  display: none;
+}
+
 hr.white-transparent{
   background-color: white;
   height: 2px;
@@ -687,6 +1933,11 @@ hr.pangea-transparent{
 }
 
 @media only screen and (max-width: 767px) {
+  /* fix side scrolling on mobile */
+  article{
+    overflow: hidden;
+  }
+  
   .person{
     display: none;
   }
@@ -728,7 +1979,7 @@ hr.pangea-transparent{
     display:none;
     /* font-size:110%; */
   }
-
+  
   body{
     font-size: 100%;
   }
@@ -777,6 +2028,25 @@ hr.pangea-transparent{
     margin: 0 auto;
     display: table;
     padding-right: 6%;
+  }
+
+  #see-more{
+    height: 94px;
+    margin-left: 5px;
+    margin-right: 14px;
+    margin-bottom: 4px;
+    width: 127px;
+    border: 4px solid #b5d5e6;
+    display: inline-block;
+    position: relative;
+  }
+
+  #see-more span{
+    position: absolute;
+    top: 33px;
+    left: 26px;
+    color: #99cc33;
+    font-size: 16px;
   }
 
   /* Hide in the news text, just show pictures in a grid */
@@ -856,6 +2126,27 @@ hr.pangea-transparent{
   .mobile-hr{
     display:block;
   }
+
+  #ourteams-content li, #ourteams-content img{
+    width: 147px;
+    height: 115px;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  #ourteams-content li{
+    padding: 31px 100px 0 5px;
+  }
+  
+  .mobile{
+    display:block;
+  }
+
+  .people-content li{
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -905,6 +2196,866 @@ hr.pangea-transparent{
     padding-left:0;
     margin-left: 0;
   }
+
+  .people-content{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+.opportunity img{
+  margin-bottom: 10px;
+}
+.opportunity div{
+  font-weight:bold;
+  font-size:large;
+}
+
+.blue-back{
+  padding-top: 20px;
+  background-color:#daeff8;
+  width:100%;
+  margin-bottom: 40px;
+  margin-top: -100px;
+}
+
+.blue-back .wrapper{
+  padding-bottom: 0;
+}
+
+#culture h2{
+  padding: 5% 0 0 5%;
+  color: #9ebcc6;
+  font-weight: 400;
+}
+
+#jobs_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-jobs.png");
+}
+
+#culture_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-culture.png");
+}
+
+#benefits_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-benefits.png");
+}
+
+
+#jobs_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-jobs-hover.png");
+}
+
+#culture_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-culture-hover.png");
+}
+
+#benefits_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-benefits-hover.png");
+}
+
+/* ABOUT */
+.people-content li{
+  display: inline-block;
+  margin-right: -5px;
+}
+
+#numbers {
+  background-color: #ccc;
+  margin-left: 3.7%;
+  padding-top: 7px;
+  height: 35px;
+  width: 93.2%;
+  font-size: 38px;
+  color: white;
+}
+#numbers-content{
+  margin-top: 0px;
+  position: relative;
+  height: 200px;
+}
+#numbers-content li{
+  cursor: pointer;
+  position: absolute;
+  margin-bottom: 0;
+  width: 219.333px;
+  height: 205px;
+  margin-right: -4.5px;
+  border: 1px solid #ccc;
+}
+#numbers-content li:hover{
+  padding: 12px 50px 36px 61px;
+  border: 7px solid #99cc33;
+}
+
+#numbers-content li img{
+  margin-bottom:20px;
+  display: block;
+}
+#numbers-content li strong{
+  font-size: 54px;
+  color: #ccc;
+}
+#numbers-content li span{
+  color:  #ccc;
+  font-size: 32px;
+  line-height: 1;
+}
+#number-46{
+  left: 35px;
+  padding: 36px 34px 36px 38px;
+}
+#numbers-content li:hover span{
+  display: block !important;
+}
+#numbers-content li:hover img{
+  display: none;
+}
+#number-55{
+  left: 253px;
+  padding: 27px 54px 36px 56px;
+}
+#number-35{
+  padding: 12px 50px 36px 61px;
+  left: 471px;
+}
+#number-59{
+  padding: 44px 55px 36px 56px;
+  left: 690px;
+}
+
+a.tooltip {outline:none; cursor: pointer;}
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+  z-index: 10;
+  display: none;
+  padding: 14px 20px;
+  margin-top: 30px;
+  margin-left: -55px;
+  width: 190px;
+  line-height: 16px;
+}
+a.tooltip:hover span{
+  display: inline;
+  position: absolute;
+  color: #111;
+  border: 1px solid #DCA;
+  background: #fffAF0;
+}
+.callout {z-index:20;position:absolute;border:0;top:-12px;left:85px;}
+    
+a.tooltip span
+{
+    border-radius:2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+        
+    -moz-box-shadow: 0px 0px 8px 4px #666;
+    -webkit-box-shadow: 0px 0px 8px 4px #666;
+    box-shadow: 0px 0px 8px 4px #666;
+}
+
+.people-content{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.people-caption, .leader-desc.mobile{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc; 
+}
+
+.leader-desc.desktop{
+  text-align: center;
+}
+.leader-desc.desktop h3{
+  opacity: 0.8;
+}
+i{
+  font-style: italic;
+}
+
+.people-caption{
+  height: 80px;
+  magin-top: -10px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.people-caption h4{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.people-caption h5{
+  margin-bottom: 0;
+}
+
+.people-caption a {
+  color: #99cc33;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.leader-desc.mobile{
+  height: 180px;
+  background: #eee;
+  display:none;
+}
+
+.people-top{
+  margin-bottom: 0 !important;
+}
+ /* OUR TEAMS STUFF */
+#ourteams-content li, #ourteams-content img{
+  width: 227px;
+  height: 175px;
+  float: left;
+}
+
+#ourteams-content li{
+  color: white;
+  padding: 110px 100px 0 5px;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.speech {
+  position: relative;
+  display:inline-block;
+  width: 160px;
+  height: 170px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #eee;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  top: 25px;
+  left: -20px;
+  cursor: pointer;
+}
+.speech.hover{
+  background-color: #fff;
+  border: 5px solid #99cc33;
+  -moz-box-shadow: 2px 2px 4px #888;
+}
+.speech.speech-left:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 76px;
+  top: 161px;
+  border: 21px solid;
+  border-color: #eee #eee transparent transparent;
+}
+.speech.speech-left.hover:before {
+  border-color: #99cc33 #99cc33 transparent transparent;
+}
+.speech.speech-left.hover:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 82px;
+  top: 160px;
+  border: 16px solid;
+  border-color: #fff #fff transparent transparent;
+}
+
+.speech.speech-right:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 40px;
+  top: 161px;
+  border: 21px solid;
+  border-color: #eee transparent transparent #eee;
+}
+.speech.speech-right.hover:before {
+  border-color: #99cc33 transparent transparent #99cc33;
+}
+.speech.speech-right.hover:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 45px;
+  top: 160px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+.speech p{
+  padding-bottom: 20px;
+  line-height: 2;
+  position: relative;
+  font-size: 19px;
+}
+.speech p span{
+  color: #99cc33;
+  position: relative;
+  top: 0;
+  font-size: 14px;
+}
+
+#shadow{
+  border: 0;
+  height: 2px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  margin-top: -2px;
+  margin-right: 101px;
+  /* padding-right: 5px; */
+  width: 92%;
+}
+
+.hr-thick {
+  /* margin-top: 15px !important; */
+  /* margin-bottom: -40px !important; */
+  height: 3px;
+}
+
+#people_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-people.png");
+}
+
+#teams_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-teams.png");
+}
+
+#leadership_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-leadership.png");
+}
+
+
+#people_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-people-hover.png");
+}
+
+#teams_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-teams-hover.png");
+}
+
+#leadership_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/04/nav-icons-leadership-hover.png");
+}
+
+/* Services */
+.pmc-left{
+  margin-bottom:-62px !important;
+}
+
+#motus{
+  background-image: url(http://www.pangeaproperties.com/wp-content/uploads/2014/06/MC-background.png);
+  width:100%;
+  height:auto;
+  overflow:auto;
+  color:white;
+  margin-top: -66px;
+  background-size: contain;
+}
+
+#motus h2{
+  margin-top:30px;
+}
+
+#pangea_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/06/nav-icons-PangeaRE.png");
+}
+
+#motus_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/06/nav-icons-motus.png");
+}
+
+#pmc_icon span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/06/nav-icons-pmc.png");
+}
+
+
+#pangea_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/06/nav-icons-PangeaRE-hover.png");
+}
+
+#motus_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/06/nav-icons-motus-hover.png");
+}
+
+#pmc_icon:hover span {
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/06/nav-icons-pmc-hover.png");
+}
+
+.mc{
+  text-align: center;
+  cursor: pointer;  
+  display: inline-block;
+}
+
+.mc span{
+  margin-left: -7%;
+  color: white;
+}
+
+.mc div{
+  background-repeat: no-repeat;
+  height: 228px;
+  width: 230px;
+}
+
+
+#mc1 div{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/07/MC-1-BF.jpg");
+}
+
+#mc2 div{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/07/MC-2-BF.jpg");
+}
+
+#mc3 div{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/07/MC-3-BF.jpg");
+}
+
+#mc4 div{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/07/MC-4-BF.jpg");
+}
+
+#mc1:hover div{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/07/MC-1-AF.jpg");
+}
+
+#mc2:hover div{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/07/MC-2-AF.jpg");
+}
+
+#mc3:hover div{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/07/MC-3-AF.jpg");
+}
+
+#mc4:hover div{
+  background-image: url("http://www.pangeaproperties.com/wp-content/uploads/2014/07/MC-4-AF.jpg");
+}
+#motus .wrapper{
+  position: relative;
+}
+
+#hover-note{
+  position: absolute;
+  bottom: 50px;
+  right: -11%;
+}
+
+.pmc-right{
+  position: relative;
+}
+
+.pmc-right .circle-item{
+  padding-left:86px;
+  width:75%;
+  margin-left: 62px;
+}
+
+.pmc-right .circle-item div{
+  display:inline-block;
+  margin-left:12px;
+  margin-bottom:18px;
+}
+
+.pmc-right .bottom-border{
+  border-bottom-style:solid;
+  border-bottom-width:1px;  
+}
+
+#pmc img{
+  float:left;
+  margin:0 20px 0 0;
+}
+
+.grey-circle{
+  height: 458px;
+  width: 458px;
+  opacity: .2;
+  background-color: grey;
+  border-radius: 233px;
+  bottom: -76px;
+  right: 8px;
+  z-index: 0;
+  position: absolute;
+}
+
+/* OUTREACH */
+#cares-background{
+  background-image: url(http://www.pangeaproperties.com/wp-content/uploads/2014/06/PC-background-image_scaled.jpg); 
+  /* height: 1000px; */
+  position: relative;
+  width:100%;
+  height:auto;
+  overflow:auto;
+  background-size: cover;
+  margin-top: -100px;
+  margin-bottom: 88px;
+  /* left: 0px; */
+  /* top: 100px; */
+}
+
+#cares-container{
+  margin-left: 40px;
+  padding-top: 40px;
+  z-index: 5;
+  margin-right: 40px;
+  background-color: rgba(0, 0, 51, 0.4);
+  padding: 20px;
+}
+
+.cares-pillar{
+  margin-left: 66px;
+}
+
+.cares-icon img{
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#cares-blurb{
+  float: right;
+  color: #99cc33;
+  font-size: 30px;
+  width: 40%;
+  line-height: 130%;
+  text-align: right;
+  margin-top: 7%;
+}
+
+.mobile-hr{
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+hr.white-transparent{
+  background-color: white;
+  height: 2px;
+  opacity: 0.6;  
+}
+
+hr.pangea-transparent{
+  background-color: #99cc33;
+  height: 2px;
+  opacity: 0.8;
+}
+
+#wonderplugincarousel-4{
+  /* margin: 0 0 !important; */
+  width: auto !important;
+  max-width: 97% !important;
+}
+
+#wonderplugincarousel-5{
+  /* margin: 0 0 !important; */
+  width: auto !important;
+  max-width: 97% !important;
+  height:auto !important;
+}
+
+#wonderplugincarousel-6{
+  /* margin: 0 0 !important; */
+  width: auto !important;
+  max-width: 97% !important;
+}
+ 
+#wonderplugincarousel-7{
+  display:none !important;
+}
+
+.col-60 {
+  float: left;
+  width: 60%;
+}
+@media only screen and (max-width: 1023px) {
+  .building {
+    margin: 1.2%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* fix side scrolling on mobile */
+  article{
+    overflow: hidden;
+  }
+  
+  .person{
+    display: none;
+  }
+
+  .people-top{
+    margin-bottom: -50px !important;
+  }
+
+  #wonderplugincarousel-7{
+    display:block !important;
+  }
+
+  .amazingcarousel-next{
+    display: none !important;
+  }
+
+  .amazingcarousel-prev{
+    display: none !important;
+  }
+
+  .desktop-only{
+    display:none !important;
+  }
+
+  .row-fluid{
+    margin-bottom: 12px !important;
+  }
+
+  #culture h2{
+    padding: 5% 0 0 0;
+  }
+
+  .building {
+    width: 47%;
+    margin: 1%;
+  }
+
+  .icon {
+    display:none;
+    /* font-size:110%; */
+  }
+  
+  body{
+    font-size: 100%;
+  }
+
+  /* .icon span { */
+  /*   height: 80px; */
+  /*   width: 80px; */
+  /*   background-size: cover; */
+  /* } */
+
+  .hr-thick {
+    margin-top: 5px !important;
+    margin-bottom: -30px !important;
+    height: 3px;
+  }
+
+  .grey-circle{
+    display:none;
+  }
+
+  .pmc-right .circle-item{
+    padding-left:0;
+    margin-left: 0;
+  }
+
+  .pmc-right{
+    margin-bottom:-28px !important;
+  }
+
+  /* hide revolution slider  */
+  .rev{
+    display:none;
+  }
+
+  /* reduce first wrapper padding because rev slider is gone */
+  .wrapper:first-of-type{
+    padding-bottom:20px !important;
+  }
+
+  .award-holder .award{
+    height: 100px;
+    width: 130px;
+  }
+
+  #award-label{
+    margin: 0 auto;
+    display: table;
+    padding-right: 6%;
+  }
+
+  #see-more{
+    height: 94px;
+    margin-left: 5px;
+    margin-right: 14px;
+    margin-bottom: 4px;
+    width: 127px;
+    border: 4px solid #b5d5e6;
+    display: inline-block;
+    position: relative;
+  }
+
+  #see-more span{
+    position: absolute;
+    top: 33px;
+    left: 26px;
+    color: #99cc33;
+    font-size: 16px;
+  }
+
+  /* Hide in the news text, just show pictures in a grid */
+  .rbPosts .postsContainer article{
+    width: 50% !important;
+    display: inline-block !important;
+    margin-top: 18px !important;
+    float: none;
+  }
+
+  .rbPosts.classic .thumb{
+    margin-bottom: 0px !important;
+  }
+
+  .rbPosts.classic article:nth-child(2) {
+    margin-top: 0 !important; *
+   }
+
+  .rbPosts .postsContainer article header,
+  .rbPosts .postsContainer article section {
+    display: none;
+  }
+
+  .news{
+    margin: 0 auto;
+    display: table;
+    padding-right: 6%;
+  }
+
+
+  .break-container{
+    margin-bottom: 0 !important;
+  }
+
+  #cares-blurb{
+    text-align: inherit;
+    float: none;
+    width:100%;
+    font-size: 16px;
+    margin-top: 7%;
+  }
+
+  #cares-background{
+    background-image:none;
+    background-color: #223952;
+    margin-top: -173px;  
+  }
+
+  #cares-container{
+    text-align: center;
+    background-color: rgba(0, 0, 51, 0);
+    padding: 20px 0 0 0;
+  }
+  
+  /* when the page gets to small, 60 column will expand full page */
+  .col-60{
+    width: 100%;
+    float: none;
+  }
+
+  .cares-pillar{
+    clear: left;
+    margin-left: 0;
+  }
+
+  .cares-icon{
+    float: none;    
+    margin: 0 auto;
+    display: table;
+  }
+
+  .cares-icon img{
+    float: none;  
+    margin: 0;
+  }
+
+  .mobile-hr{
+    display:block;
+  }
+
+  #ourteams-content li, #ourteams-content img{
+    width: 147px;
+    height: 115px;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  #ourteams-content li{
+    padding: 31px 100px 0 5px;
+  }
+  
+  .mobile{
+    display:block;
+  }
+
+  .people-content li{
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #culture h2{
+    padding: 5% 0 0 0;
+  }
+  
+  .row-fluid p {
+    margin-left: 10px;
+  }
+
+  .building {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .row-fluid {
+    font-size:85%;
+  }
+
+  .icon {
+    margin-left: -7px;
+    padding-left:0%;
+    width: 83px;
+    margin-right: 10px;
+    font-size:90%;
+  }
+
+  .icon span {
+    margin-left:17px;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+  }
+
+  .hr-thick {
+    margin-top: 5px !important;
+    margin-bottom: -35px !important;
+    height: 3px;
+  }
+
+  .grey-circle{
+    display:none;
+  }
+
+  .pmc-right .circle-item{
+    padding-left:0;
+    margin-left: 0;
+  }
+
+  .people-content{
+    text-align: center;
+    margin-top: 50px;
+  }
+
 }
 
 

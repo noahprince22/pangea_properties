@@ -1,0 +1,87 @@
+<ul class="people-content mobile">
+  <li>
+    <center style="margin-bottom: 0;">
+      <img src="http://www.pangeaproperties.com/wp-content/uploads/2014/04/Leadership-steve.jpg" style="border: 1px black;">
+    </center>
+    <div class="people-caption">
+      <h4> Steve Joung </h4>
+      <h5> CEO </h5>
+      <a> About Steve </a>
+    </div>
+    <div class="leader-desc">
+      Lorum ipsum some random stuff... HI
+    </div>
+  </li>
+</ul>
+<script type="text/javascript"> $(".people-caption a").click(function(){$(this).parent().parent().find(".leader-desc").slideToggle();}) </script>
+
+<!-- DESKTOP  -->
+<div class="desktop" >
+  <div id="speech-steve" class="speech speech-left" style="top: 45px;left: 0px;">
+    <p> Something about pangea in a few words <br>
+      <span> Steve Joung | CEO</span>
+    </p>
+  </div>
+  <div id="speech-justin" class="speech speech-left" style="top: 30px;left: 30px;">
+    <p> Something about pangea in a few words <br>
+      <span> Steve Joung | CEO</span>
+    </p>
+  </div>
+  <div id="speech-pat" class="speech speech-right" style="top: 20px;left: 215px;">
+    <p> Something about pangea in a few words <br>   
+      <span> Steve Joung | CEO</span>
+    </p>
+  </div>
+  <div id="speech-pete" class="speech speech-right hover" style="top: 45px;left: 245px;">
+    <p> Something about pangea in a few words <br>
+      <span> Steve Joung | CEO</span>
+    </p>
+  </div>
+  <img src="http://www.pangeaproperties.com/wp-content/uploads/2014/08/our-leadership.png" style="margin-left: 50px;">
+  <hr id="shadow" style="margin-left: 30px;">
+
+  <div id="steve" class="leader-desc desktop" style="display: none;">
+    <h3>
+      <strong> Steve Joung </strong> | <i> CEO </i>
+    </h3>
+    lskadjfsdlakfjsad lfkjasdlkfjasd lfksjdlfsajdflsdjfla;sdkfjsadlkfjasldfkjasdlkcjasd;lckmasdc;lkasmdclkasdjlksfjaslkdcmas;ldkfjasldkcmasdlk;fjsadklfmasldkcjasdlkcmasdlkfjsaldkcmsalkdfjasd sadlk;fjsadlkcmsadlkfjscmsaldkfjsmc sdlkckmasdl;kfjsd;cmlskd csldkc msald;cm sdlkcmsal;dkcmsadlkcm aslckmsadklcm aslkd csalk;mclksdjflksadmcaskl cmsadlkc mlksdmclksdjclksdmfskdlfjlkcmaslkdcmsadlkcm sadkcm as;ldkcm saldkcmsldck lskdmc;asld kcm sadlkc msdlkamc as
+  </div>
+
+  <div id="justin" class="leader-desc desktop" style="display: none;">
+    <h3>
+      <strong> Justin Cohen </strong> | <i> CEO </i>
+    </h3>
+    lskadjfsdlakfjsad lfkjasdlkfjasd lfksjdlfsajdflsdjfla;sdkfjsadlkfjasldfkjasdlkcjasd;lckmasdc;lkasmdclkasdjlksfjaslkdcmas;ldkfjasldkcmasdlk;fjsadklfmasldkcjasdlkcmasdlkfjsaldkcmsalkdfjasd sadlk;fjsadlkcmsadlkfjscmsaldkfjsmc sdlkckmasdl;kfjsd;cmlskd csldkc msald;cm sdlkcmsal;dkcmsadlkcm aslckmsadklcm aslkd csalk;mclksdjflksadmcaskl cmsadlkc mlksdmclksdjclksdmfskdlfjlkcmaslkdcmsadlkcm sadkcm as;ldkcm saldkcmsldck lskdmc;asld kcm sadlkc msdlkamc as
+  </div>
+
+  <div id="pat" class="leader-desc desktop" style="display: none;">
+    <h3>
+      <strong> Pat Borchard </strong> | <i> CEO </i>
+    </h3>
+    lskadjfsdlakfjsad lfkjasdlkfjasd lfksjdlfsajdflsdjfla;sdkfjsadlkfjasldfkjasdlkcjasd;lckmasdc;lkasmdclkasdjlksfjaslkdcmas;ldkfjasldkcmasdlk;fjsadklfmasldkcjasdlkcmasdlkfjsaldkcmsalkdfjasd sadlk;fjsadlkcmsadlkfjscmsaldkfjsmc sdlkckmasdl;kfjsd;cmlskd csldkc msald;cm sdlkcmsal;dkcmsadlkcm aslckmsadklcm aslkd csalk;mclksdjflksadmcaskl cmsadlkc mlksdmclksdjclksdmfskdlfjlkcmaslkdcmsadlkcm sadkcm as;ldkcm saldkcmsldck lskdmc;asld kcm sadlkc msdlkamc as
+  </div>
+
+  <div id="pete" class="leader-desc desktop" style="display: block;">
+    <h3>
+      <strong> PETE! </strong> | <i> CEO </i>
+    </h3>
+    lskadjfsdlakfjsad lfkjasdlkfjasd lfksjdlfsajdflsdjfla;sdkfjsadlkfjasldfkjasdlkcjasd;lckmasdc;lkasmdclkasdjlksfjaslkdcmas;ldkfjasldkcmasdlk;fjsadklfmasldkcjasdlkcmasdlkfjsaldkcmsalkdfjasd sadlk;fjsadlkcmsadlkfjscmsaldkfjsmc sdlkckmasdl;kfjsd;cmlskd csldkc msald;cm sdlkcmsal;dkcmsadlkcm aslckmsadklcm aslkd csalk;mclksdjflksadmcaskl cmsadlkc mlksdmclksdjclksdmfskdlfjlkcmaslkdcmsadlkcm sadkcm as;ldkcm saldkcmsldck lskdmc;asld kcm sadlkc msdlkamc as
+  </div>
+</div>
+
+<script>
+  var people = ["steve","justin","pat","pete"];
+  $.each(people,function(index){
+    var person = this;
+  $("#speech-"+this).mouseenter(
+    function(e){
+      // Clear all other showing/ hovered
+      $(".speech").removeClass("hover");
+      $(".leader-desc").hide();
+
+      $(this).addClass("hover");
+      $("#"+person).show();
+    }
+    );
+  });
+</script>
